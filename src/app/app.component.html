@@ -1,0 +1,16 @@
+
+
+<ol>
+  <li *ngFor="let product of products">
+    {{ product.name }} - Stock: 
+    <span [style.color]="product.stock <= 5 ? 'red' : 'black'" [style.font-weight]="product.stock <= 5 ? 'bold' : 'normal'">
+      {{ product.stock }}
+    </span>
+  </li>
+</ol>
+
+<!--1. Elabore un componente que posea un arreglo que contenga una lista de productos, 
+en cada posicion del arreglo debera guardarse el nombre del producto y la cantidad en stock.
+(debera haber al menos 8 elementos).
+2.En el template debera mostrarse el arreglo impreso en una lista ordenada.
+3.Si la posicion dice que en stock el valor es menor o igual a 5 , entonces debera mostrar en rojo y negrita su valor.-->
